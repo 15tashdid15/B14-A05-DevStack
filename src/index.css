@@ -90,6 +90,7 @@ body {
 
 .hero h1 span {
   background: linear-gradient(90deg, #ff7a18, #af002d);
+  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -184,6 +185,10 @@ body {
   .technology-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .stack-sidebar {
+    position: static;
+  }
 }
 
 
@@ -206,8 +211,8 @@ body {
 
 .technology-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
+  grid-template-columns: repeat(3, minmax(220px, 1fr));
+  gap: 20px;
 }
 
 .technology-card {
@@ -385,4 +390,17 @@ body {
 
 section {
   scroll-margin-top: 90px;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 30px;
+  padding: 60px 8%;
+  align-items: start;
+}
+
+.stack-sidebar {
+  position: sticky;
+  top: 100px;
 }
