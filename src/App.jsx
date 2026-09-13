@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { toast } from "react-toastify";
-
+import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import TechnologyList from "./components/TechnologyList";
@@ -72,6 +72,8 @@ function App() {
           onClear={clearStack}
         />
       </div>
+
+      <Footer />
     </>
   );
 }
