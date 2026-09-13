@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "name": "React",
+        "category": "Frontend",
+        "description": "A JavaScript library for building modern user interfaces.",
+        "icon": "⚛️",
+        "rating": 5,
+        "difficulty": "Intermediate",
+        "badge": "Popular"
+    },
+    {
+        "id": 2,
+        "name": "Node.js",
+        "category": "Backend",
+        "description": "A runtime environment for building scalable server applications.",
+        "icon": "🟢",
+        "rating": 5,
+        "difficulty": "Intermediate",
+        "badge": "Backend"
+    },
+    {
+        "id": 3,
+        "name": "MongoDB",
+        "category": "Database",
+        "description": "A flexible NoSQL database for modern applications.",
+        "icon": "🍃",
+        "rating": 4,
+        "difficulty": "Beginner",
+        "badge": "Database"
+    },
+    {
+        "id": 4,
+        "name": "JavaScript",
+        "category": "Language",
+        "description": "A programming language for interactive web development.",
+        "icon": "JS",
+        "rating": 5,
+        "difficulty": "Beginner",
+        "badge": "Essential"
+    },
+    {
+        "id": 5,
+        "name": "Python",
+        "category": "Language",
+        "description": "A versatile language used in web, AI, and automation.",
+        "icon": "PY",
+        "rating": 5,
+        "difficulty": "Beginner",
+        "badge": "Popular"
+    }
+]

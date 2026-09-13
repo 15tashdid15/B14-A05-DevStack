@@ -102,6 +102,7 @@ body {
 }
 
 @media(max-width:768px) {
+
   .nav-links,
   .nav-actions {
     display: none;
@@ -123,4 +124,67 @@ body {
   .hero-image img {
     width: 300px;
   }
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+  padding: 60px 8%;
+}
+
+.technology-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.technology-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.technology-card button,
+.stack-sidebar button {
+  margin-top: 15px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.stack-sidebar {
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  padding: 20px;
+  height: fit-content;
+}
+
+.stack-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+}
+
+
+@media(max-width:900px) {
+
+  .main-content {
+    grid-template-columns: 1fr;
+  }
+
+  .technology-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media(max-width:600px) {
+
+  .technology-grid {
+    grid-template-columns: 1fr;
+  }
+
 }
