@@ -1,3 +1,4 @@
+import Loader from "./components/Loader";
 import { useEffect, useState } from "react";
 import { toast } from "react-toastify";
 
@@ -19,7 +20,11 @@ function App() {
 
     return () => clearTimeout(timer);
   }, []);
+  if (loading) {
 
+    return <Loader />;
+
+  }
   const addToStack = (technology) => {
     const alreadyAdded = stack.find(
       (item) => item.id === technology.id
@@ -51,13 +56,7 @@ function App() {
     toast.warning("Stack cleared");
   };
 
-  if (loading) {
-    return (
-      <div className="loading">
-        Loading technologies...
-      </div>
-    );
-  }
+
 
   return (
     <>
@@ -66,7 +65,10 @@ function App() {
       <Hero />
 
       <div className="main-content">
-        <TechnologyList onAdd={addToStack} />
+        <TechnologyList
+          onAdd={addToStack}
+          stack={stack}
+        />
 
         <StackSidebar
           stack={stack}

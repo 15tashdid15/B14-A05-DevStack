@@ -1,7 +1,7 @@
 import technologies from "../data/technologies.json";
 import TechnologyCard from "./TechnologyCard";
 
-function TechnologyList({ onAdd }) {
+function TechnologyList({ onAdd, stack }) {
     return (
         <section id="technologies" className="technology-section">
             <h2>Explore Technologies</h2>
@@ -12,6 +12,9 @@ function TechnologyList({ onAdd }) {
                         key={technology.id}
                         technology={technology}
                         onAdd={onAdd}
+                        isSelected={stack.some(
+                            (item) => item.id === technology.id
+                        )}
                     />
                 ))}
             </div>

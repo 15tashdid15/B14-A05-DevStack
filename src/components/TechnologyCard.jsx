@@ -1,6 +1,6 @@
-function TechnologyCard({ technology, onAdd }) {
+function TechnologyCard({ technology, onAdd, isSelected }) {
     return (
-        <div className="technology-card">
+        <div className={`technology-card ${isSelected ? "selected" : ""}`}>
 
             <div className="technology-header">
                 <div className="tech-icon">
@@ -34,9 +34,10 @@ function TechnologyCard({ technology, onAdd }) {
 
             <button
                 className="add-button"
+                disabled={isSelected}
                 onClick={() => onAdd(technology)}
             >
-                Add to Stack
+                {isSelected ? "✓ Added to Stack" : "Add to Stack"}
             </button>
 
         </div>
