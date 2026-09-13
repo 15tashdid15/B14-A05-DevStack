@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 import { toast } from "react-toastify";
-import Footer from "./components/Footer";
+
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import TechnologyList from "./components/TechnologyList";
 import StackSidebar from "./components/StackSidebar";
+import InfoSection from "./components/InfoSection";
+import Footer from "./components/Footer";
 
 function App() {
   const [stack, setStack] = useState([]);
@@ -72,6 +74,7 @@ function App() {
           onClear={clearStack}
         />
       </div>
+      <InfoSection />
 
       <Footer />
     </>

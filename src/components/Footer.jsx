@@ -1,6 +1,6 @@
 function Footer() {
     return (
-        <footer className="footer">
+        <footer id="contact" className="footer">
 
             <div className="footer-brand">
                 <h2>Dev Stack</h2>
@@ -15,24 +15,24 @@ function Footer() {
 
                 <div>
                     <h3>Product</h3>
-                    <a href="#">Technologies</a>
-                    <a href="#">Projects</a>
-                    <a href="#">Features</a>
+                    <a href="#technologies">Technologies</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#technologies">Features</a>
                 </div>
 
 
                 <div>
                     <h3>Company</h3>
-                    <a href="#">About</a>
-                    <a href="#">Contact</a>
-                    <a href="#">Careers</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#about">Careers</a>
                 </div>
 
 
                 <div>
                     <h3>Legal</h3>
-                    <a href="#">Privacy</a>
-                    <a href="#">Terms</a>
+                    <a href="#about">Privacy</a>
+                    <a href="#about">Terms</a>
                 </div>
 
             </div>

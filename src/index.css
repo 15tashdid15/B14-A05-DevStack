@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -356,4 +360,29 @@ body {
     grid-template-columns: 1fr;
   }
 
+}
+
+.info-section {
+  padding: 60px 8%;
+  text-align: center;
+}
+
+.info-section+.info-section {
+  padding-top: 20px;
+}
+
+.info-section h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.info-section p {
+  max-width: 700px;
+  margin: auto;
+  color: #6b7280;
+  font-size: 18px;
+}
+
+section {
+  scroll-margin-top: 90px;
 }

@@ -12,11 +12,11 @@ function Navbar() {
             </div>
 
             <div className={`nav-links ${menuOpen ? "active" : ""}`}>
-                <a href="#">Home</a>
-                <a href="#">Technologies</a>
-                <a href="#">Projects</a>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
+                <a href="#home">Home</a>
+                <a href="#technologies">Technologies</a>
+                <a href="#projects">Projects</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
             </div>
 
             <div className="nav-actions">

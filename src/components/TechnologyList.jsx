@@ -3,7 +3,7 @@ import TechnologyCard from "./TechnologyCard";
 
 function TechnologyList({ onAdd }) {
     return (
-        <section className="technology-section">
+        <section id="technologies" className="technology-section">
             <h2>Explore Technologies</h2>
 
             <div className="technology-grid">
