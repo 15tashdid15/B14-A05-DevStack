@@ -1,32 +1,53 @@
 function StackSidebar({ stack, onRemove, onClear }) {
     return (
         <aside className="stack-sidebar">
-            <h2>Your Stack ({stack.length})</h2>
+
+            <h2>Your Stack</h2>
+
+            <p className="stack-count">
+                {stack.length} Technologies Selected
+            </p>
 
             {stack.length === 0 ? (
-                <p>No technology selected</p>
+                <p className="empty-stack">
+                    No technology selected
+                </p>
             ) : (
                 <>
                     <div className="selected-stack">
+
                         {stack.map((item) => (
-                            <div className="stack-item" key={item.id}>
+                            <div
+                                className="stack-item"
+                                key={item.id}
+                            >
+
                                 <div>
                                     <h4>{item.name}</h4>
-                                    <span>{item.category}</span>
+                                    <small>{item.category}</small>
                                 </div>
 
-                                <button onClick={() => onRemove(item.id)}>
-                                    Remove
+                                <button
+                                    className="remove-button"
+                                    onClick={() => onRemove(item.id)}
+                                >
+                                    ×
                                 </button>
+
                             </div>
                         ))}
+
                     </div>
 
-                    <button onClick={onClear}>
+                    <button
+                        className="clear-button"
+                        onClick={onClear}
+                    >
                         Remove All
                     </button>
                 </>
             )}
+
         </aside>
     );
 }

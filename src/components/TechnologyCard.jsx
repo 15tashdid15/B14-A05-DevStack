@@ -1,33 +1,44 @@
 function TechnologyCard({ technology, onAdd }) {
     return (
         <div className="technology-card">
-            <div className="tech-icon">
-                {technology.icon}
-            </div>
 
-            <span className="tech-badge">
-                {technology.badge}
-            </span>
+            <div className="technology-header">
+                <div className="tech-icon">
+                    {technology.icon}
+                </div>
+
+                <span className="tech-badge">
+                    {technology.badge}
+                </span>
+            </div>
 
             <h3>{technology.name}</h3>
 
-            <p>{technology.description}</p>
-
-            <p>
-                Category: {technology.category}
+            <p className="tech-description">
+                {technology.description}
             </p>
 
-            <p>
-                Difficulty: {technology.difficulty}
-            </p>
+            <div className="tech-info">
+                <span>
+                    Category: {technology.category}
+                </span>
 
-            <p>
-                Rating: {"⭐".repeat(technology.rating)}
-            </p>
+                <span>
+                    Difficulty: {technology.difficulty}
+                </span>
 
-            <button onClick={() => onAdd(technology)}>
+                <span>
+                    Rating: {"⭐".repeat(technology.rating)}
+                </span>
+            </div>
+
+            <button
+                className="add-button"
+                onClick={() => onAdd(technology)}
+            >
                 Add to Stack
             </button>
+
         </div>
     );
 }
